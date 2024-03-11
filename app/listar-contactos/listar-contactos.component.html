@@ -1,0 +1,14 @@
+<ul>
+  <li *ngFor="let item of contactos">
+    <span>Nombre: {{item.id}} {{item.nombre}} Telefono: {{item.telefono}} Email: {{item.email}} </span>
+    <span>
+      <button (click)="eliminarContacto(item?.id)">Eliminar</button>
+    </span>
+    <span>
+      <button (click)="editarContacto(item.id)">Editar</button>
+    </span>
+
+  </li>
+</ul>
+
+
